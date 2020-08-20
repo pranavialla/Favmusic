@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121315"
+    android:contentDescription="@string/play_music"
+
+    tools:context="com.example.favmusic.MusicPlay">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="407dp"
+        android:layout_height="0dp"
+        android:background="#0F161C"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicimg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/repeat"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/repeat"
+                app:srcCompat="@drawable/btn_repeat" />
+
+            <ImageView
+                android:id="@+id/looping"
+                android:layout_width="206dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@+id/looping"
+                android:onClick="looping"
+                app:srcCompat="@drawable/btn_shuffle" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/changeTracker"
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/backward"
+                app:srcCompat="@drawable/btn_backward"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/mplay"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/pause_music"
+                android:onClick="mplay"
+                app:srcCompat="@drawable/img_btn_play" />
+
+            <ImageView
+                android:id="@+id/mpause"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/pause_music"
+                android:onClick="mpause"
+                app:srcCompat="@drawable/btn_pause" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/forward"
+                app:srcCompat="@drawable/btn_forward" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/musicimg"
+        android:layout_width="411dp"
+        android:layout_height="464dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/music_image"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gunjukunna" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fav music</string>
+    <string name="fav_music">FAV MUSIC</string>
+    <string name="play_music">play music</string>
+    <string name="stop_music">stop music</string>
+    <string name="pause_music">pause music</string>
+    <string name="music_image">music image</string>
+    <string name="repeat">repeat</string>
+    <string name="loop">loop</string>
+    <string name="backward">backward</string>
+    <string name="forward">forward</string>
+</resources>
